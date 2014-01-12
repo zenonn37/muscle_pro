@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Certs:</strong>
+  <%= @bio.certs %>
+</p>
+
+<p>
+  <strong>Exp:</strong>
+  <%= @bio.exp %>
+</p>
+
+<p>
+  <strong>History:</strong>
+  <%= @bio.history %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @bio.about %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @bio.age %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @bio.gender %>
+</p>
+
+<%= link_to 'Edit', edit_bio_path(@bio) %> |
+<%= link_to 'Back', bios_path %>

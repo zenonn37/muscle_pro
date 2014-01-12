@@ -1,0 +1,41 @@
+<div class="container">
+<h1>Listing bios</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+         <th>Trainer</th>
+      <th>Certs</th>
+      <th>Exp</th>
+      <th>History</th>
+      <th>About</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bios.each do |bio| %>
+      <tr>
+        <td><%= bio.trainer.first_name %></td>
+        <td><%= bio.certs %></td>
+        <td><%= bio.exp %></td>
+        <td><%= bio.history %></td>
+        <td><%= bio.about %></td>
+        <td><%= bio.age %></td>
+        <td><%= bio.gender %></td>
+        <td><%= link_to 'Show', bio %></td>
+        <td><%= link_to 'Edit', edit_bio_path(bio) %></td>
+        <td><%= link_to 'Destroy', bio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bio', new_bio_path %>
+</div>

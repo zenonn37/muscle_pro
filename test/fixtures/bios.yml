@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  certs: MyString
+  exp: 1
+  history: MyString
+  about: MyString
+  age: 1
+  gender: MyString
+
+two:
+  certs: MyString
+  exp: 1
+  history: MyString
+  about: MyString
+  age: 1
+  gender: MyString
