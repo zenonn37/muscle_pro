@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tclass.name %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @tclass.level %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @tclass.duration %>
+</p>
+
+<p>
+  <strong>Mclass:</strong>
+  <%= @tclass.mclass %>
+</p>
+
+<p>
+  <strong>Dclass:</strong>
+  <%= @tclass.dclass %>
+</p>
+
+<p>
+  <strong>Timeclass:</strong>
+  <%= @tclass.timeclass %>
+</p>
+
+<%= link_to 'Edit', edit_tclass_path(@tclass) %> |
+<%= link_to 'Back', tclasses_path %>

@@ -1,0 +1,17 @@
+<%= simple_form_for(@tclass,html:{class:'form_horizontal'}) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+     <%= f.input :trainer_id,collection: Trainer.all,label_method: :fullName,input_html:{class:'form-control'} %>
+    <%= f.input :name, collection: ['MMA FIT','MMA PUMP','MMA CARDIO'],input_html:{class:'form-control'} %>
+    <%= f.input :level,collection: 1..4,input_html:{class:'form-control'} %>
+    <%= f.input :duration,input_html:{class:'form-control'} %>
+    <%= f.input :mclass,input_html:{class:'form-control'} %>
+    <%= f.input :dclass,input_html:{class:'form-control'} %>
+    <%= f.input :timeclass,input_html:{class:'form-control'} %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

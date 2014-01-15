@@ -1,0 +1,38 @@
+<h1>Listing tclasses</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Level</th>
+      <th>Duration</th>
+      <th>Mclass</th>
+      <th>Dclass</th>
+      <th>Timeclass</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tclasses.each do |tclass| %>
+      <tr>
+         <td><%= tclass.trainer.fullName %></td>
+        <td><%= tclass.name %></td>
+        <td><%= tclass.level %></td>
+        <td><%= tclass.duration %></td>
+        <td><%= tclass.mclass %></td>
+        <td><%= tclass.dclass %></td>
+        <td><%= tclass.timeclass %></td>
+        <td><%= link_to 'Show', tclass %></td>
+        <td><%= link_to 'Edit', edit_tclass_path(tclass) %></td>
+        <td><%= link_to 'Destroy', tclass, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tclass', new_tclass_path %>

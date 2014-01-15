@@ -1,6 +1,7 @@
 class Trainer < ActiveRecord::Base
 
 	has_one :bio
+	has_many :tclasses
 
 	 def fullName
 

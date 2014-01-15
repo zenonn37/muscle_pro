@@ -2,6 +2,8 @@ MusclePro::Application.routes.draw do
 
  
 
+  resources :tclasses
+
   root to: "bios#index"
   resources :trainers
    resources :bios
