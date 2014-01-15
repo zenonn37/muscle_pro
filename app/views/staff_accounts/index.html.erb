@@ -1,0 +1,46 @@
+
+<div class="container">
+<h1>Listing staff_accounts</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Staffid</th>
+      <th>Trainer</th>
+      <th>Location</th>
+      <th>Hours</th>
+      <th>Salary</th>
+      <th>Production</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @staff_accounts.each do |staff_account| %>
+      <tr>
+         <td><%= staff_account.trainer.fullName %></td>
+        <td><%= staff_account.staffid %></td>
+        <td><%= staff_account.trainer_id %></td>
+        <td><%= staff_account.location %></td>
+        <td><%= staff_account.hours %></td>
+        <td><%= staff_account.salary %></td>
+        <td><%= staff_account.clients %></td>
+        <td><%= staff_account.classes_total %></td>
+        <td><%= staff_account.classes_day %></td>
+
+        <td><%= link_to 'Show', staff_account %></td>
+        <td><%= link_to 'Edit', edit_staff_account_path(staff_account) %></td>
+        <td><%= link_to 'Destroy', staff_account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Staff account', new_staff_account_path %>
+
+
+</div>

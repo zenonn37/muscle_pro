@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Staffid:</strong>
+  <%= @staff_account.staffid %>
+</p>
+
+<p>
+  <strong>Trainer:</strong>
+  <%= @staff_account.trainer_id %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @staff_account.location %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @staff_account.hours %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @staff_account.salary %>
+</p>
+
+<p>
+  <strong>Production:</strong>
+  <%= @staff_account.production %>
+</p>
+
+<%= link_to 'Edit', edit_staff_account_path(@staff_account) %> |
+<%= link_to 'Back', staff_accounts_path %>

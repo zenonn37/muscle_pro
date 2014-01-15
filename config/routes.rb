@@ -2,6 +2,8 @@ MusclePro::Application.routes.draw do
 
  
 
+  resources :staff_accounts
+
   resources :tclasses
 
   root to: "bios#index"

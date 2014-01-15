@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140114230620) do
+ActiveRecord::Schema.define(version: 20140115124344) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,31 @@ ActiveRecord::Schema.define(version: 20140114230620) do
     t.datetime "updated_at"
     t.integer  "trainer_id"
   end
+
+  create_table "staff_accounts", force: true do |t|
+    t.integer  "staffid"
+    t.integer  "trainer_id"
+    t.string   "location"
+    t.integer  "hours"
+    t.decimal  "salary",         precision: 5, scale: 2
+    t.decimal  "production",     precision: 5, scale: 2
+    t.decimal  "weekly",         precision: 5, scale: 2
+    t.decimal  "monthly",        precision: 5, scale: 2
+    t.decimal  "yearly",         precision: 5, scale: 2
+    t.integer  "clients"
+    t.integer  "classes_total"
+    t.integer  "classes_day"
+    t.integer  "classes_month"
+    t.integer  "classes_weekly"
+    t.integer  "classes_yearly"
+    t.integer  "travel_miles"
+    t.string   "gyms"
+    t.string   "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "staff_accounts", ["trainer_id"], name: "index_staff_accounts_on_trainer_id", using: :btree
 
   create_table "tclasses", force: true do |t|
     t.string   "name"

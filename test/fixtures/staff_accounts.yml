@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  staffid: 1
+  trainer_id: 1
+  location: MyString
+  hours: 1
+  salary: 9.99
+  production: 9.99
+
+two:
+  staffid: 1
+  trainer_id: 1
+  location: MyString
+  hours: 1
+  salary: 9.99
+  production: 9.99

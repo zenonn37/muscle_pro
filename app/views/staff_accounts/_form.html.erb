@@ -1,0 +1,18 @@
+<%= simple_form_for(@staff_account) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :staffid %>
+    <%= f.input :location, :collection ["Global Fitness Malta","Global Fitness Glens Falls"] %>
+    <%= f.input :hours, :collection 1..80,input_html:{class:'form-control'} %>
+    <%= f.input :salary, :collection 10..100,input_html:{class:'form-control'}  %>
+    <%= f.input :clients, :collection 1..500,input_html:{class:'form-control'}  %>
+    <%= f.input :classes_total, :collection 1..10,input_html:{class:'form-control'}  %>
+    <%= f.input :classes_day, :collection 1..5,input_html:{class:'form-control'}  %>
+   
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
