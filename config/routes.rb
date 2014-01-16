@@ -2,6 +2,7 @@ MusclePro::Application.routes.draw do
 
  
 
+  get "pages/calendar"
   resources :staff_accounts
 
   resources :tclasses
