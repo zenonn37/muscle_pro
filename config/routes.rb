@@ -2,12 +2,17 @@ MusclePro::Application.routes.draw do
 
  
 
+  get "registrations/welcome"
+  devise_for :users, :controllers => {:registrations => "registrations"}
+  get "dashboards/index"
   get "pages/calendar"
+  root to: "dashboards#index"
+  
   resources :staff_accounts
 
   resources :tclasses
 
-  root to: "bios#index"
+  
   resources :trainers
    resources :bios
 

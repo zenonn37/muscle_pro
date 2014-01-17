@@ -2,11 +2,22 @@
 <html>
 <head>
   <title>MusclePro</title>
+
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= csrf_meta_tags %>
 </head>
 <body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<% if user_signed_in? %>
+   <%= link_to "Logout", destroy_user_session_path, method: :delete%>
+<%else%>
+<%=link_to "Login", new_user_session_path%>
+<%=link_to "Sign Up", new_user_registration_path%>
+<% end %>
 
 <%= yield %>
 

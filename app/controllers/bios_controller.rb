@@ -10,6 +10,8 @@ class BiosController < ApplicationController
   # GET /bios/1
   # GET /bios/1.json
   def show
+
+    #@bios_trainer = Bio.trainer.first_name
   end
 
   # GET /bios/new

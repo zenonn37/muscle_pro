@@ -20,7 +20,7 @@
   <tbody>
     <% @bios.each do |bio| %>
       <tr>
-        <td><%= bio.trainer.first_name %></td>
+        <td><%= bio.trainer.fullName %></td>
         <td><%= bio.certs %></td>
         <td><%= bio.exp %></td>
         <td><%= bio.history %></td>
