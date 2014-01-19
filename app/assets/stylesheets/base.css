@@ -1,0 +1,27 @@
+body{
+	color: #666666;
+
+}
+
+.topbar{
+	width: 100%;
+	background-color:#000; 
+	margin: 0 auto;
+	top:0;
+	left:0; 
+	height: 25px;
+	color: #fff;
+}
+
+.jumbotron {
+padding: 30px;
+margin-bottom: 30px;
+font-size: 21px;
+font-weight: 200;
+line-height: 2.1428571435;
+color: inherit;
+
+height: 600px;
+background: #c0392b url(hero_cover_color.jpg)no-repeat;
+background-size: cover;
+}
