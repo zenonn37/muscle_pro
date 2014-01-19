@@ -13,6 +13,24 @@ body{
 	color: #fff;
 }
 
+
+.navbar-default{
+	background: none;
+	border: none;
+	padding: 0 0 60px 0;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+
+/* end navigation*/
+
 .jumbotron {
 padding: 30px;
 margin-bottom: 30px;
