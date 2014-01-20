@@ -20,13 +20,17 @@
    <div class="topbar">
 
   
-
+       <div class="log-info">
 <% if user_signed_in? %>
+      <strong><%= current_user.email%></strong>
    <%= link_to "Logout", destroy_user_session_path, method: :delete%>
+   <%=link_to "Client Area",dashboards_index_path%>
 <%else%>
 <%=link_to "Login", new_user_session_path%>
 <%=link_to "Sign Up", new_user_registration_path%>
+
 <% end %>
+     </div>
 
  </div>
 

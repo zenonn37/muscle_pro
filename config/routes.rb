@@ -5,6 +5,8 @@ MusclePro::Application.routes.draw do
   get "registrations/welcome"
   devise_for :users, :controllers => {:registrations => "registrations"}
   get "dashboards/index"
+  get "dashboards/user_area"
+
   get "pages/calendar"
   root to: "pages#index"
   
