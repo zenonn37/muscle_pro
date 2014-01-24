@@ -1,45 +1,24 @@
-body{
-	color: #666666;
-
-}
-
-.topbar{
-	width: 100%;
-	background-color:#000; 
-	margin: 0 auto;
-	top:0;
-	left:0; 
-	height: 25px;
-	color: #fff;
-}
-
-
 .navbar-default{
-	background: none;
+	background:  #fff;
 	border: none;
-	padding: 0 0 60px 0;
+	height: 70px;
+	
+}
+.navbar{
+
+
+margin-bottom: 0;
+border: 1px solid transparent;
 }
 
-.navbar-default .navbar-nav>li>a{
-	font-size: 20px;
-	color: #fff;
-	text-transform: uppercase;
-	text-align: center;
-}
 
 
 
-/* end navigation*/
 
-.jumbotron {
-padding: 30px;
-margin-bottom: 30px;
-font-size: 21px;
-font-weight: 200;
-line-height: 2.1428571435;
-color: inherit;
 
-height: 600px;
-background: #c0392b url(hero_cover_color.jpg)no-repeat;
-background-size: cover;
-}
+
+
+
+
+
+
