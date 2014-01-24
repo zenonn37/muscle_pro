@@ -1,14 +1,70 @@
 .navbar-default{
 	background:  #fff;
 	border: none;
-	height: 70px;
+	height: 85px;
 	
 }
+
 .navbar{
-
-
 margin-bottom: 0;
 border: 1px solid transparent;
+}
+
+.navbar-nav {
+float: left;
+margin: 17px 0 0 0;
+}
+
+.navbar-brand {
+float: left;
+padding: 2px 2px;
+font-size: 18px;
+line-height: 20px;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-size: 14px;
+	color: #666666;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.trim{
+	background-color: #262626;
+	height: 3px;
+	width: 100%;
+	left: 0;
+}
+
+
+
+/* end navigation*/
+
+.jumbotron {
+padding: 10px;
+margin-bottom: 0;
+font-size: 21px;
+font-weight: 200;
+line-height: 2.1428571435;
+color: inherit;
+
+height: 699px;
+background: #c0392b url(hero_cover_color.jpg)no-repeat;
+background-size: cover;
+}
+
+
+/*end css*/
+
+
+
+
+
+/*media queries*/
+@media(max-width: 700px){
+
+	
+
 }
 
 
